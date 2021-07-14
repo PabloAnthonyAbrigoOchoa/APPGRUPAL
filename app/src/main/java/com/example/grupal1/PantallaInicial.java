@@ -8,13 +8,17 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PantallaInicial extends AppCompatActivity {
-    private Button Regresar;
+
+
+    private Button SigaIntentando;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pantalla_inicial);
-        Regresar=(Button)findViewById(R.id.RegresarMenu);
-        Regresar.setOnClickListener(new View.OnClickListener() {
+        SigaIntentando=(Button)findViewById(R.id.btnRegresarMenuP);
+        SigaIntentando.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(PantallaInicial.this, MainActivity.class);
