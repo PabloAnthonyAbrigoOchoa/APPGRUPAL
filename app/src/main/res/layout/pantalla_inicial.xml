@@ -6,8 +6,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="342dp"
+        android:layout_height="290dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
@@ -20,11 +20,12 @@
 
         <TextView
             android:id="@+id/txttxtcorrecto"
-            android:layout_width="wrap_content"
+            android:layout_width="296dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="60dp"
-            android:text="ES CORRECTO :')" />
+            android:text="As avanzado a la siguiente Pantalla!"
+            android:textSize="21dp" />
 
         <Button
             android:id="@+id/btnRegresarMenuP"

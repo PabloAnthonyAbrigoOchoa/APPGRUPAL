@@ -7,63 +7,19 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="305dp"
-        android:layout_height="383dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_width="318dp"
+        android:layout_height="532dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="103dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.562">
-
-        <EditText
-            android:id="@+id/edittxtnumeroIngresado"
-            android:layout_width="109dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:backgroundTint="#D6A40B"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Números!" />
-
-        <TextView
-            android:id="@+id/txtindicaciones"
-            android:layout_width="190dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="50dp"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="204dp"
-            android:layout_marginEnd="120dp"
-            android:layout_marginBottom="105dp"
-            android:text="Adivina el número del 1 al 3" />
-
-        <EditText
-            android:id="@+id/edittxtAdivina"
-            android:layout_width="146dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_margin="40dp"
-            android:backgroundTint="#D6A40B"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:text="Digite un número"
-            tools:ignore="MissingConstraints" />
-
-        <Button
-            android:id="@+id/btncambiarPantallaInicial"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="false"
-            android:layout_gravity="center"
-            android:layout_margin="1dp"
-            android:backgroundTint="#D6A40B"
-            android:text="JUGAR"
-            tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.355">
 
         <TextView
             android:id="@+id/txtnombres"
@@ -72,6 +28,59 @@
             android:layout_gravity="center"
             android:layout_margin="5dp"
             android:text="GRUPAL - PABLO ABRIGO , BRAYAN CHAMICO" />
+
+        <EditText
+            android:id="@+id/editTxtRango"
+            android:layout_width="133dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#D6A40B"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Rango a jugar" />
+
+        <TextView
+            android:id="@+id/txtindicaciones"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="50dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="204dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginBottom="105dp"
+            android:text="¡Adivina el número!"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="269dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edittxtAdivina"
+                android:layout_width="151dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_margin="40dp"
+                android:backgroundTint="#D6A40B"
+                android:ems="10"
+                android:inputType="number"
+                android:text="Digite un número"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btnJugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="false"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:backgroundTint="#D6A40B"
+                android:text="JUGAR"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
